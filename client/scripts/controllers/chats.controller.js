@@ -3,19 +3,18 @@ angular
   .controller('ChatsCtrl', ChatsCtrl);
 
 function ChatsCtrl ($scope, $reactive) {
-  $reactive(this).attach($scope);
+	$reactive(this).attach($scope);
 
-  this.remove = remove;
+	this.remove = remove;
 
-  this.helpers({
-    data: () => Chats.find({}),
-  });
+	this.helpers({
+		data: () => Chats.find({}),
+	});
 
-  ////////////
+	////////////
 
-  function remove (chat) {
-
-  	console.log(this.data);
-    Chats.remove(chat._id);
-  }
+	function remove (chat) {
+		console.log(this.data);
+		Chats.remove(chat._id);
+	}
 }
