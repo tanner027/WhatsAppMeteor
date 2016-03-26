@@ -6,8 +6,9 @@ angular
 
     'angular-meteor',
 
-    'ionic'
+    'ionic',
 
+    'angularMoment'
   ]);
 
  
